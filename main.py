@@ -12,7 +12,7 @@ def get_image_base64(image_path):
         st.warning(f"Logo file not found at {image_path}. Using text-only header.")
         return None
 
-logo_path = "./quadsync.png"
+logo_path = "/Users/pradyumnadeepakaher/Downloads/quadsync.png"
 
 
 st.markdown("""
@@ -146,7 +146,7 @@ def add_project():
     with st.form("project_form", clear_on_submit=True):
         title = st.text_input("Project Title")
         desc = st.text_area("Project Description")
-        # progress = st.slider("Progress", 0, 100, 0)
+        progress = st.slider("Progress", 0, 100, 0)
         team_members = st.multiselect("Team Members", [member["name"] for member in st.session_state.team_members])
         uploaded_files = st.file_uploader("Upload Files", accept_multiple_files=True)
         
