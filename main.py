@@ -12,7 +12,7 @@ def get_image_base64(image_path):
         st.warning(f"Logo file not found at {image_path}. Using text-only header.")
         return None
 
-logo_path = "/Users/pradyumnadeepakaher/Downloads/quadsync.png"
+logo_path = "https://github.com/Pradyumna-cyber/quadsync/blob/main/quadsync.png"
 
 
 st.markdown("""
